@@ -1,2 +1,2 @@
 # DummyPages
-Contain test pages for web development
+Contains test pages for web development
