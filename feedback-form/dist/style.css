@@ -4,6 +4,8 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+  min-width: 50%;
 }
 #main{
   margin-left: auto;
@@ -14,6 +16,7 @@ body{
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   max-width: 100%;
+  min-width: 50%;
 }
 #title{
   font-size: 5vw;
@@ -58,7 +61,7 @@ body{
     text-align: left;
     font-size: 20px;
     max-width: 100%;
-    min-width: 40%;
+    min-width: 50%;
 }
 input[type=text]{
   padding: 8px;
