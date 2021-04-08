@@ -4,8 +4,6 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
-  min-width: 50%;
 }
 #main{
   margin-left: auto;
@@ -15,8 +13,6 @@ body{
   font-family: arial;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
-  max-width: 100%;
-  min-width: 50%;
 }
 #title{
   font-size: 5vw;
