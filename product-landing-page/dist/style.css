@@ -1,3 +1,6 @@
+html{
+  scroll-behaviour: smooth;
+}
 #header{
   position: fixed;
   width: 99%;
