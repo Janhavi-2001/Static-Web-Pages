@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <meta charset = "utf-8" name = "viewport" content = "width = device-width" initial-scale = 1>
+    <title> Technical Documentation Page </title>
+  </head>
+  <body>
+    
+    <nav id = "navbar">
+      <header id = "topic"> C++ Checkpoints </header>
+      <ul class = "menu">
+        <li><a class = "nav-link" href = "#A_Brief_Introduction"> A Brief Introduction </a></li>
+        <li><a class = "nav-link" href = "#Features_of_C++"> Features of C++ </a></li>
+        <li><a class = "nav-link" href = "#Header_Libraries"> Header Libraries </a></li>
+        <li><a class = "nav-link" href = "#Data_Types"> Data Types</a></li>
+        <li><a class = "nav-link" href = "#Variables"> Variables</a></li>
+        <li><a class = "nav-link" href = "#Scope_Of_Variables"> Scope Of Variables </a></li>
+        <li><a class = "nav-link" href = "#Constants"> Constants </a></li>
+        <li><a class = "nav-link" href = "#Operators"> Operators </a></li>
+        <li><a class = "nav-link" href = "#Conditional_Statements"> Conditional Statements </a></li>
+        <li><a class = "nav-link" href = "#Loops_In_C++"> Loops In C++ </a></li>
+        <li><a class = "nav-link" href = "#Functions"> Functions </a></li>
+        <li><a class = "nav-link" href = "#STL"> STL </a></li>
+      </ul>
+    </nav>
+    
+    <main id = "main-doc">
+      
+      <section class = "main-section" id = "A_Brief_Introduction">
+          <header> A Brief Introduction </header>
+          <article>
+          <p> C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language. C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.     </p>
+            </article> 
+          <article>
+Here are some awesome facts about C++ that may interest you: <br><br>
+<ul>
+<li> The name of C++ signifies the evolutionary nature of the changes from C. “++” is the C increment operator.
+<li> C++ is one of the predominant languages for the development of all kind of technical and commercial software. 
+<li> C++ introduces Object-Oriented Programming, not present in C. Like other things, C++ supports the four primary features of OOP: encapsulation, polymorphism, abstraction, and inheritance. 
+<li> C++ got the OOP features from Simula67 Programming language.
+<li> A function is a minimum requirement for a C++ program to run.(at least main() function) <br>
+          </article>
+      </section>
+      
+      <section class = "main-section" id = "Features_of_C++">
+          <header> Features of C++ </header>
+            <article>
+              Some of the features & key-points to note about the programming language are as follows: <br><br>
+<ul>
+  <li><strong> Simple: </strong> It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich library support and a variety of data-types.
+    
+  <li><strong> Machine Independent but Platform Dependent: </strong> A C++ executable is not platform-independent (compiled programs on Linux won’t run on Windows), however they are machine independent.
+    
+  <li><strong> Mid-level language: </strong> It is a mid-level language as we can do both systems-programming (drivers, kernels, networking etc.) and build large-scale user applications (Media Players, Photoshop, Game Engines etc.)
+    
+  <li><strong> Rich library support: </strong> Has a rich library support (Both standard ~ built-in data structures, algorithms etc.) as well 3rd party libraries (e.g. Boost libraries) for fast and rapid development.
+    
+  <li><strong> Speed of execution: </strong> C++ programs excel in execution speed. Since, it is a compiled language, and also hugely procedural. Newer languages have extra in-built default features such as garbage-collection, dynamic typing etc. which slow the execution of the program overall. Since there is no additional processing overhead like this in C++, it is blazing fast.
+storage of variables).
+    
+  <li><strong> Object-Oriented: </strong> One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs. i.e. Large-scale applications can be built. Procedural code becomes difficult to maintain as code-size grows.
+    
+  <li><strong> Compiled Language: </strong> C++ is a compiled language, contributing to its speed.
+</ul>
+          </article>
+      </section>
+        
+      <section class = "main-section" id = "Header_Libraries">
+          <header> Header Libraries </header>
+            <article>
+              <p>C language has numerous libraries that include predefined functions to make programming easier. In C language, header files contain the set of predefined standard library functions. Your request to use a header file in your program by including it with the C preprocessing directive “#include”. All the header file have a ‘.h’ an extension. By including a header file, we can use its contents in our program.</p>
+
+<p>C++ also offers its users a variety of functions, one of which is included in header files. In C++, all the header files may or may not end with the “.h” extension but in C, all the header files must necessarily end with the “.h” extension. A header file contains: </p>
+            <ol>
+              <strong><li> Function Definitions </strong>
+              <strong><li> Data Type Definitions </strong>
+              <strong><li> Macros </strong>
+            </ol>
+              The syntax for adding a header file is: <br><br>
+            <code>
+              #include "filename.h"
+            </code>
+            <br>
+            <p>We can include header files in our program by using one of the above two syntax whether it is pre-defined or user-defined header file. The “#include” preprocessor is responsible for directing the compiler that the header file needs to be processed before compilation and includes all the necessary data type and function definitions.</p>
+              
+            <p>You can use various header files in a program. When a header file is included twice within a program, the compiler processes the contents of that header file twice. This leads to an error in the program. To eliminate this error, conditional preprocessor directives are used.</p>
+            <code>
+              #ifndef HEADER_FILE_NAME <br>
+              #define HEADER_FILE_NAME <br>
+                 <br><br>
+                 the entire header file <br>
+                 <br><br>
+              #endif <br>
+            </code>
+            <br>
+            Some header file examples are given below as a reference:
+            <ol>
+              <li><strong>#include&lt;stdio.h&gt;</strong>: It is used to perform input and output operations using functions scanf() and printf().
+                
+              <li><strong>#include&lt;iostream&gt;</strong>: It is used as a stream of Input and Output using cin and cout.
+                
+              <li><strong>#include&lt;string.h&gt;</strong>: It is used to perform various functionalities related to string manupulation like strlen(), strcmp(), strcpy(), size(), etc.
+                
+              <li><strong>#include&lt;math.h&gt;</strong>: It is used to perform mathematical operations like sqrt(), log2(), pow(), etc.
+                
+              <li><strong>#include&lt;iomanip.h&gt;</strong>: It is used to access set() and setprecision() function to limit the decimal places in variables.
+            </article>
+          </p>
+      </section>
+      
+      <section class = "main-section" id = "Data_Types">
+          <header> Data Types </header>
+          <p>
+            <article>
+              <p>All variables use data-type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data it can store. Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data-type with which it is declared. Every data type requires a different amount of memory. </p>
+             <br>
+             Data types can be divided into 3 categories in C++:
+            <ol>
+              <li><strong> Primitive Data Types </strong>:
+                <ul>
+                  <li> Integer
+                  <li> Character
+                  <li> Boolean
+                  <li> Floating Point Integer
+                  <li> Double Floating Point Integer
+                  <li> Void Data Type
+                  <li> Wide Character
+                </ul>
+                <br>
+              <li><strong> Derived Data Types </strong>:
+                <ul>
+                  <li> Function
+                  <li> Array
+                  <li> Pointer
+                  <li> Reference
+                </ul>
+                <br>
+              <li><strong> Abstract Data Types </strong>:
+                <ul>
+                  <li> Class
+                  <li> Structure
+                  <li> Enumeration 
+                  <li> Union
+                  <li> Typedef defined data type
+                </ul>
+            </article>
+          </p>
+      </section>
+      
+      <section class = "main-section" id = "Variables">
+          <header> Variables </header>
+            <article>
+                  <p>A variable is a name given to a memory location. It is the basic unit of storage in a program. The value stored in a variable can be changed during program execution. A variable is only a name given to a memory location, all the operations done on the variable effects that memory location. In C++, all the variables must be declared before use. A variable can be declared in the following way: </p>
+              <code>
+                // Declaring a single variable <br>
+                type variable_name; <br>
+                <br>
+                // Declaring multiple variables: <br>
+                type variable1_name, variable2_name, variable3_name; <br>
+              </code><br>
+              Where <br> 
+              <code>
+                <em>datatype</em>: Type of data that can be stored in this variable.<br>
+                <em>variable_name</em>: Name given to the variable.<br>
+                <em>value</em>: It is the initial value stored in the variable.<br>
+              </code><br>
+              <strong> Difference between variable declaration and definition </strong><br>
+                The variable declaration refers to the part where a variable is first declared or introduced before its first use. A variable definition is a part where the variable is assigned a memory location and a value. Most of the times, variable declaration and definition are done together.
+            </article>
+          </p>
+      </section>
+      
+      <section class = "main-section" id = "Scope_Of_Variables">
+          <header> Scope Of Variables </header>
+          <p>
+            <article>
+              There are three types of variables based on the scope of variables in C++:<br>
+            <ol>
+              <li><strong> Local Variables </strong>
+                <ul>
+                  <li> A variable defined within a block or method or constructor is called local variable.
+                  <li>These variable are created when the block in entered or the function is called and destroyed after exiting from the block or when the call returns from the function.
+                  <li> The scope of these variables exists only within the block in which the variable is declared. i.e. we can access these variable only within that block.
+                  <li> Initilisation of Local Variable is Mandatory.
+                </ul>
+                <br>
+              <li><strong> Instance Variables </strong>
+                <ul>
+                  <li> Instance variables are non-static variables and are declared in a class outside any method, constructor or block.
+                  <li> As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+                  <li> Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier then the default access specifier will be used.
+                  <li> Initilisation of Instance Variable is not Mandatory.
+Instance Variable can be accessed only by creating objects.
+                </ul>
+                <br>
+              <li><strong> Static Variables </strong>
+                <ul>
+                  <li> Static variables are also known as Class variables.
+                  <li> These variables are declared similarly as instance variables, the difference is that static variables are declared using the static keyword within a class outside any method constructor or block.
+                  <li> Unlike instance variables, we can only have one copy of a static variable per class irrespective of how many objects we create.
+                  <li> Static variables are created at the start of program execution and destroyed automatically when execution ends.
+                  <li> Initialization of Static Variable is not Mandatory. Its default value is 0.
+                </ul>
+                <br>
+                <code>
+                  class Sample <br>
+                  { <br>
+                      public: <br>
+                      static int a;     // static variable<br>
+                      int b;            // instance variable<br>    
+                      <br>
+                      public: <br>
+                      func() <br>
+                      {<br>
+                       int c;           // local variable<br>
+                      }<br>
+                  }; <br>
+                </code>         
+        </article>
+          </p>
+      </section>
+      
+      <section class = "main-section" id = "Constants">
+          <header> Constants </header>
+            <article>
+              <p>Constants refer to fixed values that the program may not alter and they are called literals. Constants can be of any of the basic data types and can be divided into Integer Numerals, Floating-Point Numerals, Characters, Strings and Boolean Values.
+Again, constants are treated just like regular variables except that their values cannot be modified after their definition. </p>
+              <p>There can be any types of constants like integer, float, octal, hexadecimal, character constants etc. Every constant has some range. The integers that are too big to fit into an int will be taken as long. Now there are various ranges that differ from unsigned to signed bits. Under the signed bit, the range of an int varies from -128 to +127 and under the unsigned bit, int varies from 0 to 255.</p>
+              Constants can be declared in the following ways:
+              <br>
+              <ol>
+                
+                <li><strong> Using #define preprocessor directive </strong>:
+                 <p>This directive is used to declare an alias name for existing variable or any value. We can use this to declare a constant as shown below </p>
+                  <code>
+                    #define identifierName value
+                  </code>
+                  <br>
+                  
+                <li><strong> Using a const keyword </strong>:
+                <p>Using const keyword to define constants is as simple as defining        variables, the difference is you will have to precede the definition with a const keyword. </p>
+                  <code>
+                    const dataType identifierName = value;
+                  </code>
+              </ol>
+              <br>
+            </article>
+      </section>
+      
+      <section class = "main-section" id = "Operators">
+          <header> Operators </header>
+            <article>
+            <p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C++ is rich in built-in operators and provide the following types of operators − </p>
+              <ul>
+                <li> Arithmetic Operators
+                <li> Relational Operators
+                <li> Logical Operators
+                <li> Bitwise Operators
+                <li> Assignment Operators
+                <li> Misc Operators
+              <ul>
+              <br>
+                <center><img src = "https://i.stack.imgur.com/bqEv0.jpg"></center>
+            </article>
+      </section>
+      
+      <section class = "main-section" id = "Conditional_Statements">
+          <header> Conditional Statements </header>
+          <p>
+            <article>
+            <p> There come situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code. For example, in C if x occurs then execute y else execute z. There can also be multiple conditions like in C if x occurs then execute p, else if condition y occurs execute q, else execute r. This condition of C else-if is one of the many ways of importing multiple conditions. </p>
+              <p> Decision-making statements in programming languages decide the direction of the flow of program execution. Decision-making statements available in C or C++ are: </p>
+              <ol>
+                
+                <li><strong> if statement in C/C++ </strong>:
+                <p>if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. It's syntax is as follows: </p>
+                  <code>
+                    if(condition) <br>
+                    { <br>
+                        // Statements to execute if <br>
+                        // condition is true <br>
+                    } <br>
+                  </code>
+                  <br>
+                  
+                <li><strong> if...else... statement in C/C++ </strong>:
+                <p>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the C else statement. We can use the else statement with if statement to execute a block of code when the condition is false. </p>
+                  <code>
+                    if (condition) <br>
+                    { <br>
+                        // Executes this block if <br>
+                        // condition is true <br>
+                    } <br>
+                    else <br>
+                    { <br>
+                        // Executes this block if <br>
+                        // condition is false <br>
+                    } <br>
+                  </code>
+                  <br>
+                  
+                <li><strong> Nested if statements </strong>:
+                <p>A nested if in C is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, both C and C++ allow us to nested if statements within if statements, i.e, we can place an if statement inside another if statement. <p>
+                  <code>
+                    if (condition1) <br>
+                      { <br>
+                         // Executes when condition1 is true <br>
+                         if (condition2) <br>
+                         { <br>
+                            // Executes when condition2 is true <br>
+                         } <br>
+                      } <br>
+                  </code>
+                  <br>
+                  
+                <li><strong> if-else-if ladder in C/C++</strong>:
+                <p>Here, a user can decide among multiple options. The C if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed. If none of the conditions are true, then the final else statement will be executed. </p>
+                    <code>
+                      if (condition) <br>
+                        statement;<br>
+                    else if (condition)<br>
+                        statement;<br>
+                    .<br>
+                    .<br>
+                    else<br>
+                        statement;<br>
+                    </code>
+                    <br>
+                    
+                <li><strong> Switch statements </strong>:
+                <p>Switch case statements are a substitute for long if statements that compare a variable to several integral values. The switch statement is a multiway branch statement. It provides an easy way to dispatch execution to different parts of code based on the value of the expression. Switch is a control statement that allows a value to change control of execution.</p>
+                  <code>
+                    switch (n) <br>
+                    { <br>
+                        case 1: // code to be executed if n = 1; <br>
+                            break; <br>
+                        case 2: // code to be executed if n = 2; <br>
+                            break; <br>
+                        default: // code to be executed if n doesn't match any cases <br>
+                    } <br>
+                  </code>
+                  <br>
+                  
+                <li><strong> Jump Statements </strong>:
+                  These statements are used in C or C++ for the unconditional flow of control throughout the functions in a program. They support four types of jump statements: </p>
+            <ul>
+              
+              <li> Break 
+              <p>This loop control statement is used to terminate the loop. As soon as the break statement is encountered from within a loop, the loop iterations stop there, and control returns from the loop immediately to the first statement after the loop.</p>
+                  <code>
+                    break; <br>
+                  </code>
+                  <br>
+                
+              <li> Continue 
+              <p>This loop control statement is just like the break statement. The continue statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop. </p>
+                <code>
+                  continue; <br>
+                </code>
+                <br>
+                
+                <li> Goto
+                <p>The goto statement in C/C++ also referred to as unconditional jump statement can be used to jump from one point to another within a function. </p>
+                  <code>
+                    label; <br>
+                      .<br>
+                      .<br>
+                    goto label; <br>
+                  </code>
+                  <br>
+                  
+                <li> Return
+                  <p>The return in C or C++ returns the flow of the execution to the function from where it is called. This statement does not mandatorily need any conditional statements. As soon as the statement is executed, the flow of the program stops immediately and return the control from where it was called. The return statement may or may not return anything for a void function, but for a non-void function, a return value is must be returned. </p>
+                  <code>
+                    return[expression]; <br>
+                  </code>
+            </article>
+      </section>
+      
+      <section class = "main-section" id = "Loops_In_C++">
+          <header> Loops In C++ </header>
+            <article>
+              <p>In Loop, the statement needs to be written only once and the loop will be executed 10 times as shown below.
+In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached. <p>
+
+              <p>An operation is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number. </p>
+              
+            <p><strong>Counter not Reached</strong>: If the counter has not reached the desired number, the next instruction in the sequence returns to the first instruction in the sequence and repeat it. </p>
+            <p><strong>Counter reached</strong>: If the condition has been reached, the next instruction “falls through” to the next sequential instruction or branches outside the loop.</p>
+            There are mainly two types of loops:<br><br>
+            <ul>
+  
+            <li><strong>Entry Controlled loops</strong>:
+              <p>In this type of loops the test condition is tested before entering the loop body. For Loop and While Loop are entry controlled loops.</p>
+
+            <li><strong>Exit Controlled Loops</strong>: 
+              <p>In this type of loops the test condition is tested or evaluated at the end of loop body. Therefore, the loop body will execute atleast once, irrespective of whether the test condition is true or false. do – while loop is exit controlled loop.</p>
+
+              <p>A <em>for loop</em> is a repetition control structure which allows us to write a loop that is executed a specific number of times. The loop enables us to perform n number of steps together in one line.</p>
+              
+              <code>
+                for (initialization expr; test expr; update expr) <br>
+                  {    <br>
+                       // body of the loop <br>
+                       // statements we want to execute <br>
+                  } <br>
+              </code>
+              <br>
+              <p>In for loop, a loop variable is used to control the loop. First initialize this loop variable to some value, then check whether this variable is less than or greater than counter value. If statement is true, then loop body is executed and loop variable gets updated . Steps are repeated till exit condition comes.</p>
+
+              <strong>Initialization Expression</strong>:<p>In this expression we have to initialize the loop counter to some value. for example: int i=1;</p>
+              <strong>Test Expression</strong>:<p>In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of loop and go to update expression otherwise we will exit from the for loop. For example: i &lt;= 10;</p>
+              <strong>Update Expression</strong>:<p> After executing loop body this expression increments/decrements the loop variable by some value. for example: i++; </p>
+              
+              
+              <p> A <em>while loop</em> is used in situations where we do not know the exact number of iterations of loop beforehand. The loop execution is terminated on the basis of test condition. </p>
+              <code>
+                initialization expression; <br>
+                while (test_expression)<br>
+                {<br>
+                   // statements<br>
+                  <br>
+                  update_expression; <br>
+                } <br>
+              </code>
+              <br>
+              
+              
+              <p>In <em>do while loops</em> also the loop execution is terminated on the basis of test condition. The main difference between do while loop and while loop is in do while loop the condition is tested at the end of loop body, i.e do while loop is exit controlled whereas the other two loops are entry controlled loops. </p>
+<strong>Note: In do while loop the loop body will execute at least once irrespective of test condition.</strong><br>
+               <code>
+                initialization expression;<br>
+                do<br>
+                {<br>
+                   // statements<br>
+                    <br>
+                   update_expression; <br>
+                } while (test_expression);<br>
+              </code>
+           </article>
+      </section>
+      
+      <section class = "main-section" id = "Functions">
+          <header> Functions </header>
+          <article>
+            <p>A function is a set of statements that take inputs, do some specific computation and produces output. The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can call the function. The general form of a function is </p>
+        <code>
+        return_type function_name([ arg1_type arg1_name, ... ]) { code }  <br>
+        </code>
+        
+        <p>Functions help us in reducing code redundancy. If functionality is performed at multiple places in software, then rather than writing the same code, again and again, we create a function and call it everywhere. This also helps in maintenance as we have to change at one place if we make future changes to the functionality. <p>
+        
+        <p> Functions make code modular. Consider a big file having many lines of codes. It becomes really simple to read and use the code if the code is divided into functions.
+Functions provide abstraction. For example, we can use library functions without worrying about their internal working. <p>
+        
+      <ul>
+        <li> The parameters passed to function are called actual parameters. For example, in the above program 10 and 20 are actual parameters.
+        <li> The parameters received by function are called formal parameters. For example, in the above program x and y are formal parameters.
+      </ul><br>
+      There are two most popular ways to pass parameters:<br><br>
+            <ul>
+              <li><strong>Pass by Value</strong>:<br>
+                <p>In this parameter passing method, values of actual parameters are copied to function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of caller.</p>
+                <code>
+                  #include &lt;stdio.h&rt;<br>
+                  void fun(int x)<br>
+                  {<br>
+                     x = 30;<br>
+                  }<br>
+                  <br>
+                  int main(void)<br>
+                  {<br>
+                      int x = 20;<br>
+                      fun(x);<br>
+                      printf("x = %d", x);<br>
+                      return 0;<br>
+                  }<br>
+                </code>
+                <br>
+              <li><strong>Pass by Reference</strong>:<br>
+                <p> Both actual and formal parameters refer to same locations, so any changes made inside the function are actually reflected in actual parameters of caller.</p>
+                <code>
+                  #include &lt;stdio.h&rt;<br>
+                  void fun(int x)<br>
+                  {<br>
+                     x = 30;<br>
+                  }<br>
+                  <br>
+                  int main(void)<br>
+                  {<br>
+                      int x = 20;<br>
+                      fun(x);<br>
+                      printf("x = %d", x);<br>
+                      return 0;<br>
+                  }<br>
+                 </code>
+        </article> 
+      </section>
+      
+      <section class = "main-section" id = "STL">
+          <header> STL </header>
+            <article>
+              
+              <p>The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. It is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized. A working knowledge of template classes is a prerequisite for working with STL.</p>
+              STL has 4 components:<br><br>
+              <ul>
+                <li> Algorithms 
+                  <p>The header algorithm defines a collection of functions especially designed to be used on ranges of elements.They act on containers and provide means for various operations for the contents of the containers. </p>
+                  
+                <li> Containers
+                  <p>Containers or container classes store objects and data. There are in total seven standard “first-class” container classes and three container adaptor classes and only seven header files that provide access to these containers or container adaptors.</p>
+                  
+                <li> Functors
+                  <p>The STL includes classes that overload the function call operator. Instances of such classes are called function objects or functors. Functors allow the working of the associated function to be customized with the help of parameters to be passed.</p>
+                  
+                <li> Iterators
+                  <p>As the name suggests, iterators are used for working upon a sequence of values. They are the major feature that allow generality in STL.</p>
+                  
+                  <a href = "http://www.cplusplus.com/reference/stl/" target = "_blank"> Click to know more about STL </a>
+         </article>
+      </section>
+        <p style = "font-size:12px; text-align: right"> Source - The Internet (GeeksForGeeks) </p>
+    </main>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>

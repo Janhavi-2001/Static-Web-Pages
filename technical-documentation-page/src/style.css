@@ -1,0 +1,111 @@
+html{
+  font-family: "Space Mono", monospace;
+  background-color: rgba(255, 253, 208, 0.2);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#topic{
+  font-size: 30px;
+  margin-top: 40px;
+  padding-top: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  background-color: #FFFDD0;
+  border-radius: 5px;
+  font-weight: bold;
+  color: navy;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px 1px rgba(	0, 0, 128, 0.5);
+}
+
+#topic:hover{
+  transform: scale(1.05);
+}
+
+#navbar{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #ccccff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  list-style: none;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-top: 10px;
+  height: 100%;
+  min-width: 30%;
+  text-align: center;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: navy;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.nav-link:hover{
+  background-color: #FFFDD0;
+  display: block;
+}
+
+#main-doc{
+  position: relative;
+  margin-left: 330px;
+  margin-top: 40px;
+  font-family: Arial;
+  line-height: 1.75;
+  font-size: 1.25vm;
+}
+
+section{
+  padding-bottom: 30px;
+}
+
+section header{
+  font-size: 30px;
+  font-family: "Space_Mono", monospace;
+}
+
+article ul{
+  padding-left: 20px;
+  line-height: 2;
+}
+
+code{
+  font-size: 14px;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  text-align: left;
+  background-color: #DCDCDC;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-radius: 5px;
+}
+
+@media(max-width : 400px)
+{
+  #navbar ul{
+    text-align: center;
+    float: none;
+  }
+}
