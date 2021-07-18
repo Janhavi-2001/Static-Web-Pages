@@ -1,2 +1,4 @@
-# DummyPages
-Contains test pages for web development using HTML and CSS...
+# fCC_Web_Design_Projects
+
+This repository holds responsive web pages designed as a part of the freeCodeCamp Responsive Web Design Certification. The web pages use plain HTML and CSS.
+
