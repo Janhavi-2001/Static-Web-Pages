@@ -51,7 +51,7 @@ To know more about HTML, [click here](https://www.w3schools.com/html/html_intro.
 
 **2. CSS**
 
-CSS, which stands for 'Cascading Style Sheets', is a language used to customise and style plain HTML web pages. It also describes how certain HTML elements are to be placed on the web page. Statements in CSS can either be inline in the HTML document, or can be referenced externally. The syntax of an external CSS page is as follows:
+CSS, which stands for 'Cascading Style Sheets', is a language used to customise and style plain HTML web pages. It also describes how certain HTML elements are to be placed on the web page. Statements in CSS can either be inline in the HTML document, or can be referenced externally. The syntax of a CSS statement is as follows:
 
 ```css
 
