@@ -1,6 +1,5 @@
 ## Responsive Web Designs
-\
-\
+
 Hello there! I'm Janhavi Pimplikar and I've created a few web designs using HTML and CSS. These web designs were implemented as a part of the course titled, 'Responsive Web Design' by freeCodeCamp. Feel free to check 'em out!
 \
 \
@@ -8,11 +7,9 @@ Hello there! I'm Janhavi Pimplikar and I've created a few web designs using HTML
 \
 \
 Want to know more about the mentioned technologies? Read more to find out.
-\
-\
-\
-\
-**1. HTML**
+
+
+### **1. HTML**
 
 HTML, which stands for 'HyperText Markup Language', forms the backbone of designing a webpage. It is a means of giving structure to the webpage and elaborates on where to place certain contents in it. The syntax of an HTML page is as follows:
 
@@ -43,13 +40,9 @@ Where,
 \
 \
 To know more about HTML, [click here](https://www.w3schools.com/html/html_intro.asp)!
-\
-\
-\
-\
 
 
-**2. CSS**
+### **2. CSS**
 
 CSS, which stands for 'Cascading Style Sheets', is a language used to customise and style plain HTML web pages. It also describes how certain HTML elements are to be placed on the web page. Statements in CSS can either be inline in the HTML document, or can be referenced externally. The syntax of an external CSS page is as follows:
 
