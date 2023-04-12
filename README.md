@@ -3,7 +3,7 @@
 Hello there! I'm Janhavi Pimplikar and I've created a few web designs using HTML and CSS. These web designs were implemented as a part of the course titled, 'Responsive Web Design' by freeCodeCamp. Feel free to check 'em out!
 \
 \
-[Click here](https://janhavi-2001.github.io/fCC_Web_Design_Projects/portfolio-page/dist/index.html) to open the portfolio page containing the pages.
+[Click here](https://janhavi-2001.github.io/fCC_Web_Design_Projects/portfolio-page/dist/index.html) to open the portfolio page.
 \
 \
 Want to know more about the mentioned technologies? Read more to find out.
